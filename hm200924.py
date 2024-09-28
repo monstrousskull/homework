@@ -5,6 +5,17 @@ my_list_1 = [2, 5, 8, 2, 12, 12, 4]
 my_list_2 = [2, 7, 12, 3]
 print(set(my_list_1) - set(my_list_2))
 
+a = [1, 1, 1, 2, 3, 4]
+b = [2, 4, 5,]
+for number in a:
+    if number in b:
+        a.remove(number)
+print(a)
+
+for number in a[:]:
+    if number in b:
+        a.remove(number)
+
 
 # 2. Дана дата в формате dd.mm.yyyy, например: 02.11.2013.
 # Ваша задача — вывести дату в текстовом виде, например: второе ноября 2013 года.
